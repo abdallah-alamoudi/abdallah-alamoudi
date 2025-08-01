@@ -2,16 +2,19 @@ name: Generate Snake Animation
 
 on:
   schedule:
-    - cron: "0 0 * * *" # Runs daily at midnight UTC
-  workflow_dispatch: # Allow manual trigger
+    - cron: "0 0 * * *"
+  workflow_dispatch:
 
 jobs:
   generate:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
 
-      - uses: Platane/snk@v3
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate Snake Animation
+        uses: Platane/snk@v3
         with:
           github_user_name: abdallah-alamoudi
           outputs: |
@@ -19,13 +22,11 @@ jobs:
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
             dist/github-contribution-grid-snake-light.svg?palette=github-light
 
-      - name: Push snake animation to output branch
-        uses: EndBug/add-and-commit@v9
-        with:
-          author_name: github-actions
-          author_email: github-actions@github.com
-          message: "Generate contribution snake"
-          add: 'dist/*.svg'
-          push: true
-        env:
-          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+      - name: Commit and push changes using PAT
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add dist/*.svg
+          git commit -m "Generate contribution snake" || echo "No changes to commit"
+          git remote set-url origin https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/${{ github.repository }}
+          git push origin HEAD:output
