@@ -26,4 +26,6 @@ jobs:
           author_email: github-actions@github.com
           message: "Generate contribution snake"
           add: 'dist/*.svg'
-          github_token: ${{ secrets.PAT_TOKEN }}
+          push: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
