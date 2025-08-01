@@ -47,9 +47,4 @@ Check out my pinned repositories below or visit my [GitHub profile](https://gith
 
 ---
 
-<!-- Snake contribution graph animation in GitHub theme -->
-![Snake animation](https://github.com/abdallah-alamoudi/abdallah-alamoudi/raw/output/github-contribution-grid-snake.svg?palette=github-dark)
-
----
-
 _Thanks for visiting! ⭐_
