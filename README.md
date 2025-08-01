@@ -39,7 +39,8 @@ Check out my pinned repositories below or visit my [GitHub profile](https://gith
 ![Abdallah's GitHub stats](https://github-readme-stats.vercel.app/api?username=abdallah-alamoudi&show_icons=true&theme=github_dark)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=abdallah-alamoudi&layout=compact&theme=github_dark)
 <!-- Snake contribution animation -->
-![Snake animation](https://github.com/abdallah-alamoudi/abdallah-alamoudi/raw/output/github-contribution-grid-snake-light.svg)
+![Snake animation](https://github.com/abdallah-alamoudi/abdallah-alamoudi/raw/output/dist/github-contribution-grid-snake-light.svg)
+
 
 
 ---
