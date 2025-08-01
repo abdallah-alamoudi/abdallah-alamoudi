@@ -28,5 +28,5 @@ jobs:
           git config user.email "github-actions@github.com"
           git add dist/*.svg
           git commit -m "Generate contribution snake" || echo "No changes to commit"
-          git remote set-url origin https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/${{ github.repository }}
-          git push origin HEAD:output
+          git branch -f output   # force-create/reset output branch
+          git push -f https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/${{ github.repository }} output
