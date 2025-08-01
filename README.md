@@ -1,6 +1,5 @@
 # 👋 Hi, I'm Abdallah Alamoudi
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/abdallah-alamoudi/)
 [![Gmail](https://img.shields.io/badge/Gmail-Email-red?style=flat&logo=gmail)](mailto:abdallahalamoudi20@gmail.com)
 
 ---
