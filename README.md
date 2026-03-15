@@ -30,7 +30,7 @@ Check out my pinned repositories below or visit my [GitHub profile](https://gith
 ## 📫 Let's Connect
 
 - **Email:** [abdallahalamoudi20@gmail.com](mailto:abdallahalamoudi20@gmail.com)
-- **WhatsApp:** [+967 712233370](https://wa.me/967780652808)
+- **WhatsApp:** [+967 780652808](https://wa.me/967780652808)
 
 ---
 
